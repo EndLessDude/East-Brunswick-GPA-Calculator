@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GPA Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            background: #e8f0fe;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            margin-top: 20px;
+            color: #1a73e8;
+        }
+
+        #courses {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .course {
+            background: white;
+            padding: 15px;
+            margin: 10px 0;
+            width: 90%;
+            max-width: 600px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .course input, .course select {
+            margin: 5px;
+            padding: 8px;
+            font-size: 14px;
+            flex: 1 1 80px;
+        }
+
+        .course button.remove-btn {
+            background: #ff4d4d;
+            color: white;
+            border: none;
+            padding: 6px 12px;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-left: 5px;
+        }
+
+        .course button.remove-btn:hover {
+            background: #e60000;
+        }
+
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            background: #1a73e8;
+            color: white;
+            transition: 0.2s;
+        }
+
+        button:hover {
+            background: #155ab6;
+        }
+
+        #result {
+            margin-top: 25px;
+            font-size: 22px;
+            color: #333;
+        }
+
+        label {
+            font-size: 16px;
+            margin-top: 10px;
+            display: inline-block;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>GPA Calculator</h1>
+
+    <div>
+    <label>
+        <input type="radio" name="gpaType" value="weighted" checked> Weighted GPA
+    </label>
+    <label>
+        <input type="radio" name="gpaType" value="unweighted"> Unweighted GPA
+    </label>
+</div>
+
+    <div id="courses"></div>
+
+    <!--<button onclick="addCourse()">Add Class</button> -->
+    <button onclick="calculateGPA()">Calculate GPA</button>
+
+    <h2 id="result"></h2>
+
+    <script src="gpa.js"></script>
+        <!--Navbar-->
+<script src="navbar.js"></script>
+</body>
+</html>
