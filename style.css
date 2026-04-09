@@ -1,0 +1,53 @@
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: #1a73e8;
+    padding: 15px 0;
+    color: white;
+    font-size: 18px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: 0.2s;
+}
+
+.navbar a:hover {
+    background: rgba(255,255,255,0.2);
+}
+.course {
+    width: 90%;
+    max-width: 700px;
+    margin: 10px auto;
+}
+
+.course-row {
+    display: flex;
+    gap: 10px;
+    background: white;
+    padding: 12px;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.course-row input,
+.course-row select {
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    flex: 1;
+    font-size: 14px;
+}
+
+.course-row input:focus,
+.course-row select:focus {
+    outline: none;
+    border-color: #1a73e8;
+}

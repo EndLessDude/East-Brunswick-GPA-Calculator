@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 <head>
@@ -123,4 +124,143 @@ body {
     <!--Navbar-->
 <script src="js/navbar.js"></script>
 </body>
+=======
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Tools Home</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f7fb;
+        }
+
+        /* Top Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            background-color: #1a73e8;
+            padding: 15px 0;
+            color: white;
+            font-size: 18px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            transition: 0.2s;
+        }
+
+        .navbar a:hover {
+            background: rgba(255,255,255,0.2);
+        }
+
+        /* Big blue rectangle (Home feature) */
+        .main-feature {
+            margin: 40px auto;
+            width: 90%;
+            max-width: 900px;
+            background: #1a73e8;
+            border-radius: 30px;
+            padding: 50px 20px;
+            color: white;
+            text-align: center;
+            position: relative;
+        }
+
+        .main-feature h1 {
+            margin-bottom: 40px;
+            font-size: 36px;
+        }
+
+        /* Subtabs inside blue rectangle */
+        .subtabs {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+        }
+
+        .subtab {
+            background: white;
+            color: #1a73e8;
+            padding: 20px 35px;
+            border-radius: 25px;
+            font-size: 20px;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .subtab:hover {
+            background: #e0e7ff;
+        }
+
+        /* About Us section */
+        .about-us {
+            margin: 60px auto;
+            width: 90%;
+            max-width: 900px;
+            background: white;
+            padding: 40px 20px;
+            border-radius: 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .about-us h2 {
+            color: #1a73e8;
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+
+        .about-us p {
+            font-size: 18px;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .subtab {
+                padding: 15px 20px;
+                font-size: 16px;
+            }
+
+            .main-feature h1 {
+                font-size: 28px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+
+    <!-- Main Blue Rectangle -->
+    <div class="main-feature">
+        <h1>Home</h1>
+        <div class="subtabs">
+            <div class="subtab" onclick="location.href='gpa.html'">GPA Calculator</div>
+            <div class="subtab" onclick="location.href='course-grading.html'">Course Grading</div>
+            <div class="subtab">Coming Soon</div>
+        </div>
+    </div>
+
+    <!-- About Us Section -->
+    <div class="about-us">
+        <h2>About Us</h2>
+        <p>
+            We provide tools to help students track their academic progress, calculate GPAs, and stay organized. 
+            Our goal is to make managing grades simple, intuitive, and accessible for every student.
+        </p>
+    </div>
+    <!--Navbar-->
+<script src="navbar.js"></script>
+</body>
+>>>>>>> e60cb7570f87fb7b1c6646f833f6897c4a185b98
 </html>
