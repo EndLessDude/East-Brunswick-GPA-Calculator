@@ -1,111 +1,19 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 <head>
     <title>Student Tools Home</title>
     <link rel="stylesheet" href="css/style.css">
-    <style>
-/* ===== Fonts ===== */
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap");
-
-/* ===== Base ===== */
-body {
-    font-family: "Raleway", sans-serif;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(135deg, #11998e, #000000);
-    min-height: 100vh;
-    color: white;
-}
-
-/* ===== Main Feature (Hero) ===== */
-.main-feature {
-    margin: 50px auto;
-    width: 92%;
-    max-width: 950px;
-    background: linear-gradient(135deg, #11998e, #0d7c73);
-    border-radius: 30px;
-    padding: 60px 25px;
-    text-align: center;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-}
-
-.main-feature h1 {
-    margin-bottom: 45px;
-    font-size: 2.8rem;
-    font-weight: 700;
-}
-
-/* ===== Subtabs (Cards) ===== */
-.subtabs {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 25px;
-}
-
-.subtab {
-    background: rgba(255,255,255,0.95);
-    color: #11998e;
-    padding: 20px 35px;
-    border-radius: 25px;
-    font-size: 1.2rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: 0.25s;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
-}
-
-.subtab:hover {
-    transform: translateY(-4px) scale(1.05);
-    background: white;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-}
-
-/* ===== About Section ===== */
-.about-us {
-    margin: 70px auto;
-    width: 92%;
-    max-width: 950px;
-    background: rgba(255,255,255,0.95);
-    padding: 45px 25px;
-    border-radius: 25px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.25);
-    text-align: center;
-    color: #333;
-}
-
-.about-us h2 {
-    color: #11998e;
-    margin-bottom: 20px;
-    font-size: 2rem;
-}
-
-.about-us p {
-    font-size: 1.1rem;
-    line-height: 1.7;
-}
-
-/* ===== Responsive ===== */
-@media (max-width: 600px) {
-    .subtab {
-        padding: 15px 20px;
-        font-size: 1rem;
-    }
-
-    .main-feature h1 {
-        font-size: 2rem;
-    }
-}
-</style>
     <link rel="stylesheet" href="css/navbar.css">
 </head>
 <body>
 
+    <!-- Navbar -->
+    <div id="navbar-container"></div>
 
-    <!-- Main Blue Rectangle -->
+    <!-- Main Feature -->
     <div class="main-feature">
         <h1>Home</h1>
+
         <div class="subtabs">
             <div class="subtab" onclick="location.href='gpa.html'">GPA Calculator</div>
             <div class="subtab" onclick="location.href='course-grading.html'">Course Grading</div>
@@ -113,7 +21,7 @@ body {
         </div>
     </div>
 
-    <!-- About Us Section -->
+    <!-- About Section -->
     <div class="about-us">
         <h2>About Us</h2>
         <p>
@@ -121,146 +29,9 @@ body {
             Our goal is to make managing grades simple, intuitive, and accessible for every student.
         </p>
     </div>
-    <!--Navbar-->
-<script src="js/navbar.js"></script>
+
+    <!-- Scripts -->
+    <script src="js/navbar.js"></script>
+
 </body>
-=======
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Student Tools Home</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #f4f7fb;
-        }
-
-        /* Top Navbar */
-        .navbar {
-            display: flex;
-            justify-content: space-around;
-            background-color: #1a73e8;
-            padding: 15px 0;
-            color: white;
-            font-size: 18px;
-        }
-
-        .navbar a {
-            color: white;
-            text-decoration: none;
-            padding: 8px 16px;
-            border-radius: 6px;
-            transition: 0.2s;
-        }
-
-        .navbar a:hover {
-            background: rgba(255,255,255,0.2);
-        }
-
-        /* Big blue rectangle (Home feature) */
-        .main-feature {
-            margin: 40px auto;
-            width: 90%;
-            max-width: 900px;
-            background: #1a73e8;
-            border-radius: 30px;
-            padding: 50px 20px;
-            color: white;
-            text-align: center;
-            position: relative;
-        }
-
-        .main-feature h1 {
-            margin-bottom: 40px;
-            font-size: 36px;
-        }
-
-        /* Subtabs inside blue rectangle */
-        .subtabs {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 25px;
-        }
-
-        .subtab {
-            background: white;
-            color: #1a73e8;
-            padding: 20px 35px;
-            border-radius: 25px;
-            font-size: 20px;
-            cursor: pointer;
-            transition: 0.2s;
-        }
-
-        .subtab:hover {
-            background: #e0e7ff;
-        }
-
-        /* About Us section */
-        .about-us {
-            margin: 60px auto;
-            width: 90%;
-            max-width: 900px;
-            background: white;
-            padding: 40px 20px;
-            border-radius: 20px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            text-align: center;
-        }
-
-        .about-us h2 {
-            color: #1a73e8;
-            margin-bottom: 20px;
-            font-size: 28px;
-        }
-
-        .about-us p {
-            font-size: 18px;
-            color: #333;
-            line-height: 1.6;
-        }
-
-        /* Responsive adjustments */
-        @media (max-width: 600px) {
-            .subtab {
-                padding: 15px 20px;
-                font-size: 16px;
-            }
-
-            .main-feature h1 {
-                font-size: 28px;
-            }
-        }
-
-    </style>
-</head>
-<body>
-
-
-    <!-- Main Blue Rectangle -->
-    <div class="main-feature">
-        <h1>Home</h1>
-        <div class="subtabs">
-            <div class="subtab" onclick="location.href='gpa.html'">GPA Calculator</div>
-            <div class="subtab" onclick="location.href='course-grading.html'">Course Grading</div>
-            <div class="subtab">Coming Soon</div>
-        </div>
-    </div>
-
-    <!-- About Us Section -->
-    <div class="about-us">
-        <h2>About Us</h2>
-        <p>
-            We provide tools to help students track their academic progress, calculate GPAs, and stay organized. 
-            Our goal is to make managing grades simple, intuitive, and accessible for every student.
-        </p>
-    </div>
-    <!--Navbar-->
-<script src="navbar.js"></script>
-</body>
->>>>>>> e60cb7570f87fb7b1c6646f833f6897c4a185b98
 </html>

@@ -1,17 +1,29 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Course Grading</title>
+
+    <!-- Shared styles -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/navbar.css">
+
+    <!-- Page-specific style -->
     <style>
         body {
-            font-family: 'Raleway', sans-serif;
+            font-family: "Raleway", sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(135deg, #11998e, #000000);
+
             min-height: 100vh;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            background: linear-gradient(135deg, #11998e, #000000);
             color: #fff;
         }
 
@@ -25,10 +37,13 @@
             border-collapse: collapse;
             width: 90%;
             max-width: 600px;
+
             background: white;
             color: #333;
+
             border-radius: 12px;
             overflow: hidden;
+
             box-shadow: 0 4px 10px rgba(0,0,0,0.1);
         }
 
@@ -52,8 +67,10 @@
         }
     </style>
 </head>
+
 <body>
-    <!-- Navbar injected by JS -->
+
+    <!-- NAVBAR (always first) -->
     <script src="js/navbar.js"></script>
 
     <h1>Percent to Letter Grade</h1>
@@ -63,6 +80,7 @@
             <th>Percent</th>
             <th>Letter Grade</th>
         </tr>
+
         <tr><td>98 - 100</td><td>A+</td></tr>
         <tr><td>92 - 97</td><td>A</td></tr>
         <tr><td>90 - 91</td><td>A-</td></tr>
@@ -77,86 +95,6 @@
         <tr><td>60 - 61</td><td>D-</td></tr>
         <tr><td>Below 60</td><td>F</td></tr>
     </table>
+
 </body>
-=======
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Course Grading</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background: #f4f7fb;
-        }
-
-        h1 {
-            text-align: center;
-            color: #1a73e8;
-            margin-bottom: 30px;
-        }
-
-        table {
-            margin: 0 auto;
-            border-collapse: collapse;
-            width: 90%;
-            max-width: 600px;
-            background: white;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-        }
-
-        th, td {
-            padding: 15px;
-            text-align: center;
-        }
-
-        th {
-            background: #1a73e8;
-            color: white;
-            font-size: 18px;
-        }
-
-        tr:nth-child(even) {
-            background: #f0f4ff;
-        }
-
-        tr:hover {
-            background: #e0e7ff;
-        }
-    </style>
-</head>
-<body>
-
-    <!--Navbar-->
-    <script src="navbar.js"></script>
-
-    <h1>Percent to Letter Grade</h1>
-
-    <table>
-        <tr>
-            <th>Percent</th>
-            <th>Letter Grade</th>
-        </tr>
-        <tr><td>98 - 100</td><td>A+</td></tr>
-        <tr><td>92 - 97</td><td>A</td></tr>
-        <tr><td>90 - 91</td><td>A-</td></tr>
-        <tr><td>86 - 89</td><td>B+</td></tr>
-        <tr><td>82 - 85</td><td>B</td></tr>
-        <tr><td>80 - 81</td><td>B-</td></tr>
-        <tr><td>76 - 79</td><td>C+</td></tr>
-        <tr><td>72 - 75</td><td>C</td></tr>
-        <tr><td>70 - 71</td><td>C-</td></tr>
-        <tr><td>66 - 69</td><td>D+</td></tr>
-        <tr><td>62 - 65</td><td>D</td></tr>
-        <tr><td>60 - 61</td><td>D-</td></tr>
-        <tr><td>Below 60</td><td>F</td></tr>
-    </table>
-       <!--Navbar-->
-<script src="navbar.js"></script>
-</body>
->>>>>>> e60cb7570f87fb7b1c6646f833f6897c4a185b98
 </html>
