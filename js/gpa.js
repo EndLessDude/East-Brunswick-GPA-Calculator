@@ -17,6 +17,7 @@ function addCourse() {
 
         <label>Credits:</label>
         <select class="credits">
+            <option value="1.25">1.25</option>
             <option value="2.5">2.5</option>
             <option value="3.75">3.75</option>
             <option value="5" selected>5</option>
@@ -44,7 +45,7 @@ function addCourse() {
         <button class="remove-btn">❌</button>
     `;
 
-    div.querySelector(".remove-btn").addEventListener("click", () => {
+    div.querySelector(".remove-btn").addEventListener("click", () => { 
         div.remove();
         calculateGPA();
     });

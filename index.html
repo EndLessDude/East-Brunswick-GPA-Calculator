@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Student Tools Home</title>
+    <title>GPA Calculator</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/navbar.css">
 </head>
@@ -10,28 +10,23 @@
     <!-- Navbar -->
     <div id="navbar-container"></div>
 
-    <!-- Main Feature -->
-    <div class="main-feature">
-        <h1>Home</h1>
+    <h1>GPA Calculator</h1>
 
-        <div class="subtabs">
-            <div class="subtab" onclick="location.href='gpa.html'">GPA Calculator</div>
-            <div class="subtab" onclick="location.href='course-grading.html'">Course Grading</div>
-            <div class="subtab">Coming Soon</div>
-        </div>
+    <div class="gpa-toggle">
+        <button id="weighted-btn" class="active">Weighted GPA</button>
+        <button id="unweighted-btn">Unweighted GPA</button>
     </div>
 
-    <!-- About Section -->
-    <div class="about-us">
-        <h2>About Us</h2>
-        <p>
-            We provide tools to help students track their academic progress, calculate GPAs, and stay organized. 
-            Our goal is to make managing grades simple, intuitive, and accessible for every student.
-        </p>
-    </div>
+    <div id="courses"></div>
+
+    <button id="add-course-btn">+</button>
+    <button id="calculate-btn" onclick="calculateGPA()">Calculate GPA</button>
+
+    <h2 id="result"></h2>
 
     <!-- Scripts -->
     <script src="js/navbar.js"></script>
+    <script src="js/gpa.js"></script>
 
 </body>
 </html>
