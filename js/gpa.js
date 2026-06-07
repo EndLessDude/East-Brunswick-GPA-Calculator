@@ -21,6 +21,7 @@ function addCourse() {
             <option value="2.5">2.5</option>
             <option value="3.75">3.75</option>
             <option value="5" selected>5</option>
+            <option value="6.25">6.25</option>
             <option value="7.5">7.5</option>
         </select>
 
